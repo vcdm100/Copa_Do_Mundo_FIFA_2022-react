@@ -7,7 +7,7 @@ export function Header() {
     <nav className='fixed flex justify-between px-4 py-4 mx-auto bg-magenta-900 w-full'>
 
         <div className='container flex flex-wrap items-center justify-between mx-auto max-w-6xl'>
-            <img src={LogoFifaNavBar} class='h-6 mr-3 sm: h-9' alt='Fifa Logo'/>
+            <img src={LogoFifaNavBar} class='h-6 mr-3 sm:h-9' alt='Fifa Logo'/>
         </div>
 
         <div className='items-center hidden space-x-8 text-gray-100 lg:flex'>
