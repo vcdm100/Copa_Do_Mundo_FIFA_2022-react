@@ -1,41 +1,46 @@
 import React from 'react';
 import LogoFifaNavBar from '../assets/images/logo-fifa/logo-fifa-world-cup.svg';
-import WallpaperWorldCup from '../assets/images/wallpapers/wallpaper.png';
 import LogoFifaMain from '../assets/images/logo-fifa/logo-fifa-world-cup-main.svg';
 
 export function Header() {
   return (
 
-    <div>
+    <header className='flex flex-col w-full items-center'>
 
-        <nav className='absolute flex justify-between px-52 py-4 mx-auto bg-magenta-900 w-full'>
+      <nav className='flex justify-between w-full h-[100px] bg-magenta-900'>
 
-            <div className='container flex flex-wrap items-center justify-between mx-auto max-w-7xl'>
-                <img src={LogoFifaNavBar} class='h-6 mr-3 sm:h-9' alt='Fifa Logo'/>
+            <div className='flex justify-between items-center container mx-auto'>
+
+                <img src={LogoFifaNavBar} />
+
+                <ul className='flex gap-8 text-gray-100 text-sm'>
+                  <li>
+                    <a href="#">Home</a>
+                  </li>
+                  <li>
+                    <a href="#">Grupos</a>
+                  </li>
+                  <li>
+                    <a href="#">Partidas</a>
+                  </li>
+                  <li>
+                    <a href="#">Estádios</a>
+                  </li>
+                </ul>
+
             </div>
-
-            <span className='items-center hidden space-x-8 text-gray-100 lg:flex'>
-                <a href="#">Home</a>
-                <a href="#">Grupos</a>
-                <a href="#">Partidas</a>
-                <a href="#">Estádios</a>
-            </span>
           
         </nav>
 
-        <div>
+        <div className='w-full h-[400px] bg-hero bg-cover flex items-center justify-center relative'>
 
-            <img src={WallpaperWorldCup} className='absolute mt-16 w-full object-cover' />
+            <img src={LogoFifaMain} className='w-[250px] z-[5]' />
 
-            <div className='absolute inset-0 mt-16 w-full h-full bg-magenta-900 bg-opacity-50'></div>
-
-            <div>
-              <img src={LogoFifaMain} />
-            </div>
+            <div className='bg-magenta-900 bg-opacity-50 w-full h-[400px] absolute'></div>
 
         </div>
-
-    </div>
+    
+    </header>
 
   )
 };
