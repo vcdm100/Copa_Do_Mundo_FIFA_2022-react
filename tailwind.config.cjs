@@ -36,10 +36,13 @@ module.exports = {
       fontFamily: {
         sans: 'Inter, sans-serif',
       },
+      backgroundImage: {
+        hero: "url('./src/assets/images/wallpapers/wallpaper.png')",
+      },
     },
 
   },
 
   plugins: [],
 
-}
+};
