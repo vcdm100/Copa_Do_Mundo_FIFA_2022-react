@@ -13,7 +13,7 @@ export function Header() {
 
                 <img src={LogoFifaNavBar} />
 
-                <ul className='flex gap-8 text-gray-100 text-sm'>
+                <ul className='flex gap-9 text-gray-100 text-sm'>
                   <li>
                     <a href="#">Home</a>
                   </li>
