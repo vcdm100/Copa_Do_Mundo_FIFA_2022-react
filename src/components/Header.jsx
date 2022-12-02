@@ -5,42 +5,53 @@ import LogoFifaMain from '../assets/images/logo-fifa/logo-fifa-world-cup-main.sv
 export function Header() {
   return (
 
-    <header className='flex flex-col w-full items-center'>
+    <header>
 
-      <nav className='flex justify-between w-full h-[100px] bg-magenta-900'>
+      <nav className='flex flex-col w-full h-[10vh] items-center bg-magenta-900'>
 
-            <div className='flex justify-between items-center container mx-auto'>
+        <div id='navbar' className='w-full h-[10vh] mx-0 my-auto flex justify-between items-center'>
 
-                <img src={LogoFifaNavBar} />
+          <div id='log-fifa' className='w-24 ml-48'>
 
-                <ul className='flex gap-9 text-gray-100 text-sm'>
-                  <li>
-                    <a href="#">Home</a>
-                  </li>
-                  <li>
-                    <a href="#">Grupos</a>
-                  </li>
-                  <li>
-                    <a href="#">Partidas</a>
-                  </li>
-                  <li>
-                    <a href="#">Estádios</a>
-                  </li>
-                </ul>
+            <img src={LogoFifaNavBar} alt="Logo da fifa na cor branca" className='max-[768px]:w-[60px] max-[768px]:ml-3' />
 
-            </div>
-          
-        </nav>
+          </div>
 
-        <div className='w-full h-[400px] bg-hero bg-cover flex items-center justify-center relative'>
+          <div id="menu" className='flex justify-between items-center mr-40'>
 
-            <img src={LogoFifaMain} className='w-[250px] z-[5]' />
+            <ul className='flex gap-9 mr-6 text-gray-100 text-sm'>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Grupos</a>
+              </li>
+              <li>
+                <a href="#">Partidas</a>
+              </li>
+              <li>
+                <a href="#">Estádios</a>
+              </li>
+            </ul>
 
-            <div className='bg-magenta-900 bg-opacity-50 w-full h-[400px] absolute'></div>
+          </div>
+    
+        </div>
+        
+      </nav>
+
+      <div className='w-full h-[75vh] max-[768px]:w-full max-[768px]:h-[50vh] bg-hero bg-cover bg-position-center flex justify-center items-center'>
+
+        <img src={LogoFifaMain} className='w-[250px] z-[5]' />
+
+        <div className='bg-magenta-900 bg-opacity-50 w-full h-[75vh] max-[768px]:h-[50vh] absolute'>
 
         </div>
+
+      </div>
     
     </header>
 
   )
 };
+ 
